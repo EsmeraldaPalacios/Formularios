@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Janet Sánchez</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilosd.css">
+</head>
+<body>
+    <div id="form-container">
+        <div id="cabezal">
+            <h4>Janet Sánchez</h4>
+            <h1>Ingreso de Calificaciones</h1>
+        </div>
+        <form id="calificacionesForm">
+            <p><label for="matricula">Matrícula</label></p>
+            <input type="text" id="matricula" name="matricula" required>
+            
+            <p><label for="nombre">Nombre</label></p>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <p><label for="m1">Materia 1</label></p>
+            <select id="m1" name="m1" class="field">
+                <option value="Ingles">Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Español">Español</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Algebra">Algebra</option>
+            </select>
+            <br/>
+
+            <p><label for="c1">Calificación 1</label></p>
+            <input type="number" id="c1" name="c1" class="field" required>
+            <br/>
+
+            <p><label for="m2">Materia 2</label></p>
+            <select id="m2" name="m2" class="field">
+                <option value="Ingles">Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Español">Español</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Algebra">Algebra</option>
+            </select>
+            <br/>
+
+            <p><label for="c2">Calificación 2</label></p>
+            <input type="number" id="c2" name="c2" class="field" required>
+            <br/>
+
+            <p><label for="m3">Materia 3</label></p>
+            <select id="m3" name="m3" class="field">
+                <option value="Ingles">Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Español">Español</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Algebra">Algebra</option>
+            </select>
+            <br/>
+
+            <p><label for="c3">Calificación 3</label></p>
+            <input type="number" id="c3" name="c3" class="field" required>
+            <br/>
+
+            <p><label for="m4">Materia 4</label></p>
+            <select id="m4" name="m4" class="field">
+                <option value="Ingles">Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Español">Español</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Algebra">Algebra</option>
+            </select>
+            <br/>
+
+            <p><label for="c4">Calificación 4</label></p>
+            <input type="number" id="c4" name="c4" class="field" required>
+            <br/>
+
+            <p><label for="m5">Materia 5</label></p>
+            <select id="m5" name="m5" class="field">
+                <option value="Ingles">Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Español">Español</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Algebra">Algebra</option>
+            </select>
+            <br/>
+
+            <p><label for="c5">Calificación 5</label></p>
+            <input type="number" id="c5" name="c5" class="field" required>
+            <br/>
+
+            <h1 class="center-content">
+                <input type="button" id="submit-button" class="btn btn-green" value="Enviar" onclick="calcularPromedio()">
+            </h1>
+        </form>
+    </div>
+    <table id="tabla-calificaciones">
+        <thead>
+            <tr>
+                <th>Matrícula</th>
+                <th>Nombre</th>
+                <th>Materia</th>
+                <th>Calificación</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Promedio</td>
+                <td id="resultado"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="./js/promedioTabla.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body{
+    background-image: url(ss.webp);
+    font-family: Georgia;
+}
+
+
+#form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cabezal {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(149, 245, 149, 0.993);
+    border-radius: 20px;
+}
+
+#cabezal h1 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+}
+
+#cabezal h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+form p label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la tabla de calificaciones */
+#tabla-calificaciones {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-calificaciones th,
+#tabla-calificaciones td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#tabla-calificaciones th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tabla-calificaciones tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabla-calificaciones tfoot td {
+    font-weight: bold;
+}
